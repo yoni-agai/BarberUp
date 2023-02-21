@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">BarberUp</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="fullName">Fullname</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="click_to_login">Click To Login</string>
+    <string name="click_to_register">Click To Register</string>
+    <string name="logout">Logout</string>
+    <string name="mainscreen_welcome_placeholder">Welcome %s</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="home">Home</string>
+    <string name="schedule">Schedule</string>
+    <string name="info">Info</string>
+
+    <!--Barbershop Info Tab-->
+    <string name="barbershop_info_title">Barbershop Info</string>
+    <string name="barbershop_info_hours_title">Schedule</string>
+    <string name="barbershop_info_services_title">Services</string>
+    <string name="barbershop_info_phone_with_prefix">Phone: %s</string>
+    <string name="barbershop_info_address_with_prefix">Address: %s</string>
+    <string name="barbershop_info_sunday_with_prefix">Sunday: %s</string>
+    <string name="barbershop_info_monday_with_prefix">Monday: %s</string>
+    <string name="barbershop_info_tuesday_with_prefix">Tuesday: %s</string>
+    <string name="barbershop_info_wednesday_with_prefix">Wednesday: %s</string>
+    <string name="barbershop_info_thursday_with_prefix">Thursday: %s</string>
+    <string name="barbershop_info_friday_with_prefix">Friday: %s</string>
+    <string name="edit">Edit</string>
+    <string name="update">update</string>
+    <string name="phone">Phone:</string>
+    <string name="address">Address:</string>
+    <string name="new_event">New Event</string>
+
+    <!--Schedule Screen-->
+    <string name="schedule_new_app_dialog_title">Booking an appointment!</string>
+    <string name="schedule_new_app_dialog_msg">Are you sure you want to book an appointment on %s on %s</string>
+    <string name="schedule_new_app_dialog_positive">YES, BOOK!</string>
+    <string name="schedule_new_app_dialog_negative">CANCEL</string>
+
+
+</resources>

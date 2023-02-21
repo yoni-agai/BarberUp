@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/background_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fiTitle"
+            style="@style/BarbershopInfoTitle"
+            android:text="@string/barbershop_info_title"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            app:cardElevation="8dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardElevation="8dp">
+
+                <TextView
+                    android:id="@+id/fiPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:hint="@string/phone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/fiAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:hint="@string/address"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fiPhoneNumber"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/fiAddressAndHoursTitle"
+            style="@style/BarbershopInfoTitle"
+            android:text="@string/barbershop_info_hours_title"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            app:cardElevation="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/fiSunday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Sunday:"/>
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/fiSundaySlider"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:valueFrom="8"
+                        android:valueTo="20"
+                        android:stepSize="1"
+                        app:values="@array/initial_sunday_values"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/fiMonday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/fiSunday"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Monday:"/>
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/fiMondaySlider"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:valueFrom="8"
+                        android:valueTo="20"
+                        android:stepSize="1"
+                        app:values="@array/initial_monday_values"
+                        app:layout_constraintTop_toBottomOf="@+id/fiSunday"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/fiTuesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/fiMonday"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Tuesday:"/>
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/fiTuesdaySlider"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:valueFrom="8"
+                        android:valueTo="20"
+                        android:stepSize="1"
+                        app:values="@array/initial_tuesday_values"
+                        app:layout_constraintTop_toBottomOf="@+id/fiMonday"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/fiWednesday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/fiTuesday"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Wednesday:"/>
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/fiWednesdaySlider"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:valueFrom="8"
+                        android:valueTo="20"
+                        android:stepSize="1"
+                        app:values="@array/initial_wednesday_values"
+                        app:layout_constraintTop_toBottomOf="@+id/fiTuesday"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/fiThursday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        app:layout_constraintTop_toBottomOf="@+id/fiWednesday"
+                        app:layout_constraintStart_toStartOf="parent"
+                        tools:text="Thursday:"/>
+
+                    <com.google.android.material.slider.RangeSlider
+                        android:id="@+id/fiThursdaySlider"
+                        android:layout_width="170dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="180dp"
+                        android:valueFrom="8"
+                        android:valueTo="20"
+                        android:stepSize="1"
+                        app:values="@array/initial_thursday_values"
+                        app:layout_constraintTop_toBottomOf="@+id/fiWednesday"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/fiEditScheduleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="!Attention!\nEditing Open-Hours will not affect existing appointments."/>
+
+        <Button
+            android:id="@+id/fiUpdateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

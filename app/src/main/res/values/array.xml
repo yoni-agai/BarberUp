@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="initial_sunday_values">
+        <item>8</item>
+        <item>20</item>
+    </array>
+    <array name="initial_monday_values">
+        <item>8</item>
+        <item>20</item>
+    </array>
+    <array name="initial_tuesday_values">
+        <item>8</item>
+        <item>20</item>
+    </array>
+    <array name="initial_wednesday_values">
+        <item>8</item>
+        <item>20</item>
+    </array>
+    <array name="initial_thursday_values">
+        <item>8</item>
+        <item>20</item>
+    </array>
+</resources>
